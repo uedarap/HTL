@@ -1,7 +1,25 @@
 $primary: #AC453A;
-$primaryS: AC453A;
 $base: #3A3B3B;
 $secondary: #F2BB1F;
+
+// Tints (claro)
+$primary-t1: #b4584e;
+$primary-t2: #bd6a61;
+$primary-t3: #c57d75;
+
+// Shades (Escuro)
+$primary-s1: #9b3e34;
+$primary-s2: #8a372e;
+$primary-s3: #783029;
+$base-s1: #343535;
+$base-s2: #2e2f2f;
+$base-s3: #292929;
+
+$Sprimary: AC453A;
+$Sprimary-s1: 9b3e34;
+$Sprimary-s2: 8a372e;
+$Sprimary-s3: 783029;
+// 
 
 $dark: #3A3B3B;
 
@@ -18,51 +36,51 @@ body{
         background-color: $primary;
         &:before{
             box-shadow: inset 0 -1px 0 0 $primary, 0 1px 0 0 $primary;
-            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23#{$primaryS}%3B' /%3E%3C/svg%3E");
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23#{$Sprimary}%3B' /%3E%3C/svg%3E");
         }
     
         &:after{
             box-shadow: inset 0 -1px 0 0 $primary, 0 1px 0 0 $primary;
-            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23#{$primaryS}%3B' /%3E%3C/svg%3E");
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23#{$Sprimary}%3B' /%3E%3C/svg%3E");
         }
     }
 
     section#two{
-        background-color: $primary;
+        background-color: $primary-s1;
         &:before{
-            box-shadow: inset 0 -1px 0 0 $primary, 0 1px 0 0 $primary;
-            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23#{$primaryS}%3B' /%3E%3C/svg%3E");
+            box-shadow: inset 0 -1px 0 0 $primary-s1, 0 1px 0 0 $primary-s1;
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23#{$Sprimary-s1}%3B' /%3E%3C/svg%3E");
         }
     
         &:after{
-            box-shadow: inset 0 -1px 0 0 $primary, 0 1px 0 0 $primary;
-            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23#{$primaryS}%3B' /%3E%3C/svg%3E");
+            box-shadow: inset 0 -1px 0 0 $primary-s1, 0 1px 0 0 $primary-s1;
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23#{$Sprimary-s1}%3B' /%3E%3C/svg%3E");
         }
     }
 
     section#three{
-        background-color: $base;
+        background-color: $primary-s2;
         &:before{
-            box-shadow: inset 0 -1px 0 0 $base, 0 1px 0 0 $base;
-            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23#{$primaryS}%3B' /%3E%3C/svg%3E");
+            box-shadow: inset 0 -1px 0 0 $primary-s2, 0 1px 0 0 $primary-s2;
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23#{$Sprimary-s2}%3B' /%3E%3C/svg%3E");
         }
     
         &:after{
-            box-shadow: inset 0 -1px 0 0 $base, 0 1px 0 0 $base;
-            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23#{$primaryS}%3B' /%3E%3C/svg%3E");
+            box-shadow: inset 0 -1px 0 0 $primary-s2, 0 1px 0 0 $primary-s2;
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23#{$Sprimary-s2}%3B' /%3E%3C/svg%3E");
         }
     }
 
     section#four{
-        background-color: $primary;
+        background-color: $primary-s3;
         &:before{
-            box-shadow: inset 0 -1px 0 0 $primary, 0 1px 0 0 $primary;
-            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23#{$primaryS}%3B' /%3E%3C/svg%3E");
+            box-shadow: inset 0 -1px 0 0 $primary-s3, 0 1px 0 0 $primary-s3;
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23#{$Sprimary-s3}%3B' /%3E%3C/svg%3E");
         }
     
         &:after{
-            box-shadow: inset 0 -1px 0 0 $primary, 0 1px 0 0 $primary;
-            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23#{$primaryS}%3B' /%3E%3C/svg%3E");
+            box-shadow: inset 0 -1px 0 0 $primary-s3, 0 1px 0 0 $primary-s3;
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23#{$Sprimary-s3}%3B' /%3E%3C/svg%3E");
         }
     }
 
