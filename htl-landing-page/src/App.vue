@@ -1,4 +1,29 @@
 <script setup lang="ts">
+  import axios from 'axios';
+import { ref } from 'vue';
+
+  const name = ref();
+  const email = ref();
+  const message = ref();
+  
+  async function enviarFormulario(){
+    try {
+      const formData = new FormData();
+      formData.append('name', this.name);
+      formData.append('email', this.email);
+      formData.append('message', this.message);
+
+      const response = await axios.post('/email.php', formData);
+      
+      if (response.data.success) {
+        alert(response.data.message);  // Alerta de sucesso
+      } else {
+        alert(response.data.message);  // Alerta de erro
+      }
+    } catch (error) {
+      alert("Erro ao enviar o email."); // Alerta de erro se algo der errado
+    }
+  }
 
 </script>
 
@@ -122,23 +147,23 @@
         <div class="inner">
           <h2 class="major">Get in touch</h2>
           <p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
-          <form method="post" action="#">
+          <form @submit.prevent="enviarFormulario">
             <div class="fields">
               <div class="field">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" />
+                <label for="name">Nome</label>
+                <input v-model="name" type="text" id="name" required />
               </div>
               <div class="field">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" />
+                <input v-model="email" type="email" id="email" required />
               </div>
               <div class="field">
-                <label for="message">Message</label>
-                <textarea name="message" id="message" rows="4"></textarea>
+                <label for="message">Mensagem</label>
+                <textarea v-model="message" id="message" rows="4" required></textarea>
               </div>
             </div>
             <ul class="actions">
-              <li><input type="submit" value="Send Message" /></li>
+              <li><input type="submit" value="Enviar Mensagem" /></li>
             </ul>
           </form>
           <ul class="contact">
