@@ -1,32 +1,67 @@
-$primary: #AC453A;
-$base: #3A3B3B;
-$secondary: #F2BB1F;
-
-// Tints (claro)
-$primary-t1: #b4584e;
-$primary-t2: #bd6a61;
-$primary-t3: #c57d75;
+// Nova paleta de cores
+$primary: #a61c1c;
+$base: #6c757d;
+$secondary: #ffd7b9;
+$white: #EAE4D7;
+$blue: #4f67b1;
 
 // Shades (Escuro)
-$primary-s1: #9b3e34;
-$primary-s2: #8a372e;
-$primary-s3: #783029;
-$base-s1: #343535;
-$base-s2: #2e2f2f;
-$base-s3: #292929;
+$primary-s1: #951919;
+$primary-s2: #841616;
+$primary-s3: #731313;
+$base-s1: #606a71;
+$base-s2: #545e65;
+$base-s3: #495359;
 
-$Sprimary: AC453A;
-$Sprimary-s1: 9b3e34;
-$Sprimary-s2: 8a372e;
-$Sprimary-s3: 783029;
-// 
+// Tints (Claro)
+$blue-s1: #96add6;
+$secondary-s1: #e6c2a7;
+$secondary-s2: #ccae95;
+$secondary-s3: #b39a83;
 
-$dark: #3A3B3B;
+// Variáveis simplificadas (sem '#')
+$Sprimary: a61c1c;
+$Sprimary-s1: 951919;
+$Sprimary-s2: 841616;
+$Sprimary-s3: 731313;
+
+$dark: #6c757d;
+
+@font-face {
+    font-family: 'MyFont'; // Nome da fonte que será usado no CSS
+    src: url('../assets/fonts/Articulatcf-light.otf') format('truetype'); // Caminho relativo à pasta SCSS
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+header{
+    // background-color: $Sprimary;
+}
+
 
 body{
     background-color: $primary;
-    background-image: linear-gradient(to top, rgba($primary, 0.8), rgba($primary, 0.8)), url('./assets/images/bg.jpg');
+    background-image: linear-gradient(to top, rgba($primary, 1), rgba($primary, 0.77)), url('./assets/images/bg.jpg');
     // background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url('./assets/images/bg.jpg');
+    color: $secondary;
+
+    span{
+        color: $secondary;
+    }
+
+    a{
+        color: $secondary;
+    }
+
+    h2{
+        font-family: 'MyFont', sans-serif;
+        color: $secondary;
+    }
+
+    .features article {
+        background-color: $primary-s2;
+    }
 
     #menu .inner{
         background: rgba($color: $primary, $alpha: .95);

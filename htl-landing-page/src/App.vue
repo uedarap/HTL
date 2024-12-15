@@ -34,9 +34,9 @@ import { ref } from 'vue';
 
     <!-- Header -->
       <header id="header" class="alt">
-        <h1><a href="index.html">Solid State</a></h1>
+        <h1 class="q-pt-lg" style="font-size: 25pt; font-weight: 400; scroll-behavior: smooth;"><a href="#banner">HTL</a></h1>
         <nav>
-          <a href="#menu">Menu</a>
+          <!-- <a href="#menu">Menu</a> -->
         </nav>
       </header>
 
@@ -58,9 +58,12 @@ import { ref } from 'vue';
     <!-- Banner -->
       <section id="banner">
         <div class="inner">
-          <div class="logo"><span class="icon fa-gem"></span></div>
-          <h2>This is Solid State</h2>
-          <p>Another free + fully responsive site template by <a href="http://html5up.net">HTML5 UP</a></p>
+          <div class="logo">
+            <!-- <span class="icon fa-gem"></span> -->
+             <img src="./assets/images/htl.png" alt="" style="width: 300px;">
+          </div>
+          <h2 style="font-weight: 100; font-size: 25pt; text-transform: uppercase;">Engenharia e Serviços</h2>
+          <!-- <p>Another free + fully responsive site template by <a href="http://html5up.net">HTML5 UP</a></p> -->
         </div>
       </section>
 
