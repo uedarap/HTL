@@ -29,7 +29,8 @@ $dark: #6c757d;
 
 @font-face {
     font-family: 'MyFont'; // Nome da fonte que será usado no CSS
-    src: url('../assets/fonts/Articulatcf-light.otf') format('truetype'); // Caminho relativo à pasta SCSS
+    // src: url('../src/assets/fonts/Articulatcf-light.otf') format('truetype'); // Caminho relativo à pasta SCSS
+    src: url('/src/assets/fonts/Articulatcf-light.otf') format('truetype'); // Caminho relativo à pasta SCSS
     font-weight: normal;
     font-style: normal;
   }
@@ -42,7 +43,7 @@ header{
 
 body{
     background-color: $primary;
-    background-image: linear-gradient(to top, rgba($primary, 1), rgba($primary, 0.77)), url('./assets/images/bg.jpg');
+    background-image: linear-gradient(to top, rgba($primary, 1), rgba($primary, 0.77)), url('/src/assets/images/bg.jpg');
     // background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url('./assets/images/bg.jpg');
     color: $secondary;
 
