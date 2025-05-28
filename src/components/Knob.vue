@@ -1,14 +1,16 @@
 <template>
     <div id="knob" class="knob">
-        <input class="knob" type="range" step="10" value="60" min="0" max="100">
+        <input class="knob" type="range" step="10" min="10" max="100" :value="value" @input="handleInput" />
     </div>
 </template>
 
 
 <script setup lang="ts">
-    import { onMounted } from 'vue';
+    import { ref, onMounted, watch, defineEmits } from 'vue';
 
-    
+	const value = ref(90);
+	const emit = defineEmits(['value']);
+
     onMounted(() => {
         const input = document.querySelector("input[type='range']");
         for (const event of ["input", "change"])
@@ -21,8 +23,15 @@
             if (input[data]) input.style.setProperty(`--${data}`, input[data]);
     };
 
+	function handleInput(event) {
+		const inputValue = event.target.value;
+		value.value = inputValue; // Atualiza o valor interno
+		emit('value', inputValue); // Emite o evento com o novo valor
+		console.log("Input value:", inputValue);
+	}
 
-</script>
+
+</script>v
 
 
 <style lang="scss" scoped>

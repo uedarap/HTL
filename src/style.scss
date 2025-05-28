@@ -1,5 +1,6 @@
 // Nova paleta de cores
 $primary: #4f67b1;
+$primary-o: #4f67b1bb;
 $base: #6c757d;
 $secondary: #ffd7b9;
 $white: #EAE4D7;
@@ -9,6 +10,9 @@ $red: #a61c1c;
 $primary-s1: #455ca1;
 $primary-s2: #3b518f;
 $primary-s3: #32467e;
+$primary-s1-o: #455ca1bb;
+$primary-s2-o: #3b518fbb;
+$primary-s3-o: #32467ebb;
 $base-s1: #606a71;
 $base-s2: #545e65;
 $base-s3: #495359;
@@ -24,6 +28,10 @@ $Sprimary: 4f67b1;
 $Sprimary-s1: 455ca1;
 $Sprimary-s2: 3b518f;
 $Sprimary-s3: 32467e;
+$Sprimary-o: 4f67b1bb;
+$Sprimary-s1-o: 455ca1bb;
+$Sprimary-s2-o: 3b518fbb;
+$Sprimary-s3-o: 32467ebb;
 
 $dark: #6c757d;
 
@@ -43,9 +51,17 @@ header{
 
 body{
     background-color: $primary;
-    background-image: linear-gradient(to top, rgba($primary, .5), rgba($primary, 0.3)), url('/src/assets/images/lamp_wide.png');
+    // background-image: linear-gradient(to top, rgba($primary, .7), rgba($primary, 0.2)), url('/src/assets/images/lamp_wide.png');
     // background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url('./assets/images/bg.jpg');
     color: $secondary;
+
+    #background{
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-color: $primary;
+        background-image: linear-gradient(to top, rgba($primary, .7), rgba($primary, 0.2)), url('/src/assets/images/lamp_wide.png');
+    }
 
     span{
         color: $secondary;
@@ -67,6 +83,11 @@ body{
     #menu .inner{
         background: rgba($color: $primary, $alpha: .95);
     }
+    
+    .opacity{
+        // opacity: 0.8;
+    }
+
 
     section#one{
         background-color: $primary;

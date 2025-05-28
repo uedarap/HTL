@@ -6,6 +6,7 @@ import Knob from '../../components/Knob.vue';
 const name = ref();
 const email = ref();
 const message = ref();
+const knobValue = ref(90);
 
 async function enviarFormulario() {
   try {
@@ -26,9 +27,17 @@ async function enviarFormulario() {
   }
 }
 
+const knobValueChange = (value: number) => {
+  knobValue.value = value; // Atualiza o valor do knob
+  document.getElementById('background').style.filter = `brightness(${value}%)`;
+  console.log('Knob value changed:', knobValue.value);
+};
+
 </script>
 
 <template>
+
+  <div id="background"></div>
 
   <!-- Page Wrapper -->
   <div id="page-wrapper">
@@ -62,19 +71,19 @@ async function enviarFormulario() {
       <div class="inner">
         <div class="logo">
           <!-- <span class="icon fa-gem"></span> -->
-          <img src="../../assets/images/htl.png" alt="" style="width: 300px;">
+          <img src="../../assets/images/logo_azul.png" alt="" style="width: 30vw; margin: 50px 0;">
         </div>
-        <h2 style="font-weight: 100; font-size: 25pt; text-transform: uppercase;">Engenharia e Serviços</h2>
+        <!-- <h2 style="font-weight: 100; font-size: 25pt; text-transform: uppercase;">Engenharia e Serviços</h2> -->
         <!-- <p>Another free + fully responsive site template by <a href="http://html5up.net">HTML5 UP</a></p> -->
       </div>
-      <Knob></Knob>
+      <Knob @value="knobValueChange"></Knob>
     </section>
 
     <!-- Wrapper -->
     <section id="wrapper">
 
       <!-- One -->
-      <section id="one" class="wrapper spotlight style1">
+      <section id="one" class="wrapper spotlight style1 opacity">
         <div class="inner">
           <a href="#" class="image"><img src="../../assets/images/pic01.jpg" alt="" /></a>
           <div class="content">
