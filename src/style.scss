@@ -43,7 +43,7 @@ header{
 
 body{
     background-color: $primary;
-    background-image: linear-gradient(to top, rgba($primary, 1), rgba($primary, 0.77)), url('/src/assets/images/bg.jpg');
+    background-image: linear-gradient(to top, rgba($primary, .5), rgba($primary, 0.3)), url('/src/assets/images/lamp_wide.png');
     // background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url('./assets/images/bg.jpg');
     color: $secondary;
 

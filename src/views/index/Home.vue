@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import axios from 'axios';
 import { ref } from 'vue';
+import Knob from '../../components/Knob.vue';
 
 const name = ref();
 const email = ref();
@@ -66,6 +67,7 @@ async function enviarFormulario() {
         <h2 style="font-weight: 100; font-size: 25pt; text-transform: uppercase;">Engenharia e Serviços</h2>
         <!-- <p>Another free + fully responsive site template by <a href="http://html5up.net">HTML5 UP</a></p> -->
       </div>
+      <Knob></Knob>
     </section>
 
     <!-- Wrapper -->
