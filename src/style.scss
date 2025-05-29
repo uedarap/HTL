@@ -62,6 +62,7 @@ body{
         background-color: $primary;
         background-image: linear-gradient(to top, rgba($primary, .7), rgba($primary, 0.2)), url('/src/assets/images/lamp_wide.png');
         background-repeat: round;
+        transition: filter 0.3s ease-in-out;
     }
 
     span{

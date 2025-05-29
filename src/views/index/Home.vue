@@ -2,6 +2,7 @@
 import axios from 'axios';
 import { ref } from 'vue';
 import Knob from '../../components/Knob.vue';
+import AutoCarousel from '../../components/AutoCarousel.vue';
 
 const name = ref();
 const email = ref();
@@ -124,10 +125,8 @@ const knobValueChange = (value: number) => {
       <!-- Four -->
       <section id="four" class="wrapper alt style1 opacity">
         <div class="inner">
-          <h2 class="major">Vitae phasellus</h2>
-          <p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce
-            tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus.
-            Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
+          <h2 class="major">Quem somos</h2>
+          <p>Desde 2011, a <b>HTL</b> atua em indústrias, rodovias e terminais portuários, oferecendo serviços de instalação, manutenção e adequação de sistemas elétricos, além de projetos e laudos técnicos. Também somos especialistas em soluções de iluminação inteligente, trazendo inovação e eficiência para nossos clientes. Nosso foco é combinar tecnologia de ponta com um atendimento próximo e confiável, garantindo excelência, transparência e resultados que atendem às reais necessidades de cada projeto.</p>
           <section class="features">
             <article>
               <a href="#" class="image"><img src="../../assets/images/pic04.jpg" alt="" /></a>
@@ -158,6 +157,8 @@ const knobValueChange = (value: number) => {
             <li><a href="#" class="button">Browse All</a></li>
           </ul>
         </div>
+        <AutoCarousel></AutoCarousel>
+        <div style="height: 40px;"></div>
       </section>
 
     </section>
