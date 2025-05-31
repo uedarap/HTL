@@ -129,29 +129,29 @@ const knobValueChange = (value: number) => {
           <p>Desde 2011, a <b>HTL</b> atua em indústrias, rodovias e terminais portuários, oferecendo serviços de instalação, manutenção e adequação de sistemas elétricos, além de projetos e laudos técnicos. Também somos especialistas em soluções de iluminação inteligente, trazendo inovação e eficiência para nossos clientes. Nosso foco é combinar tecnologia de ponta com um atendimento próximo e confiável, garantindo excelência, transparência e resultados que atendem às reais necessidades de cada projeto.</p>
           <section class="features">
             <article>
-              <a href="#" class="image"><img src="../../assets/images/pic04.jpg" alt="" /></a>
-              <h3 class="major">Sed feugiat lorem</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-              <a href="#" class="special">Learn more</a>
+              <a href="#" class="image"><img src="../../assets/images/ilumincacao.png" alt="" /></a>
+              <h3 class="major">Iluminação</h3>
+              <p>Soluções inteligentes e econômicas que garantem segurança e eficiência em diversos ambientes.</p>
+              <!-- <a href="#" class="special">Learn more</a> -->
             </article>
             <article>
-              <a href="#" class="image"><img src="../../assets/images/pic05.jpg" alt="" /></a>
-              <h3 class="major">Nisl placerat</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-              <a href="#" class="special">Learn more</a>
+              <a href="#" class="image"><img src="../../assets/images/laudos.png" alt="" /></a>
+              <h3 class="major">Laudos e Projetos</h3>
+              <p>Laudos e projetos elétricos precisos, alinhados às normas e necessidades dos clientes.</p>
+              <!-- <a href="#" class="special">Learn more</a> -->
             </article>
             <article>
-              <a href="#" class="image"><img src="../../assets/images/pic06.jpg" alt="" /></a>
-              <h3 class="major">Ante fermentum</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-              <a href="#" class="special">Learn more</a>
+              <a href="#" class="image"><img src="../../assets/images/montagem.png" alt="" /></a>
+              <h3 class="major">Montagem e Instalação</h3>
+              <p>Montagem e instalação de sistemas elétricos com qualidade, agilidade e segurança.</p>
+              <!-- <a href="#" class="special">Learn more</a> -->
             </article>
-            <article>
+            <!-- <article>
               <a href="#" class="image"><img src="../../assets/images/pic07.jpg" alt="" /></a>
               <h3 class="major">Fusce consequat</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
               <a href="#" class="special">Learn more</a>
-            </article>
+            </article> -->
           </section>
           <ul class="actions">
             <li><a href="#" class="button">Browse All</a></li>
