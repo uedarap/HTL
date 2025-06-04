@@ -72,7 +72,7 @@ const knobValueChange = (value: number) => {
       <div class="inner">
         <div class="logo">
           <!-- <span class="icon fa-gem"></span> -->
-          <img src="../../assets/images/logo_azul.png" alt="" style="width: 30vw; margin: 50px 0;">
+          <img src="../../assets/images/logo_azul.png" alt="">
         </div>
         <!-- <h2 style="font-weight: 100; font-size: 25pt; text-transform: uppercase;">Engenharia e Serviços</h2> -->
         <!-- <p>Another free + fully responsive site template by <a href="http://html5up.net">HTML5 UP</a></p> -->
@@ -153,9 +153,9 @@ const knobValueChange = (value: number) => {
               <a href="#" class="special">Learn more</a>
             </article> -->
           </section>
-          <ul class="actions">
+          <!-- <ul class="actions">
             <li><a href="#" class="button">Browse All</a></li>
-          </ul>
+          </ul> -->
         </div>
         <AutoCarousel></AutoCarousel>
         <div style="height: 40px;"></div>
@@ -166,11 +166,7 @@ const knobValueChange = (value: number) => {
     <!-- Footer -->
     <section id="footer">
       <div class="inner">
-        <h2 class="major">Get in touch</h2>
-        <p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce
-          tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed
-          ac elementum arcu. Quisque placerat auctor laoreet.</p>
-        <form @submit.prevent="enviarFormulario">
+        <form @submit.prevent="enviarFormulario" style="z-index: 5;">
           <div class="fields">
             <div class="field">
               <label for="name">Nome</label>
@@ -191,15 +187,18 @@ const knobValueChange = (value: number) => {
         </form>
         <ul class="contact">
           <li class="icon solid fa-home">
-            Untitled Inc<br />
-            1234 Somewhere Road Suite #2894<br />
-            Nashville, TN 00000-0000
+            <b>Rua Alexandre Gusmão 11</b><br />
+            Cj 917 e Sala 09<br />
+            Valongo, Santos SP - Brasil
           </li>
-          <li class="icon solid fa-phone">(000) 000-0000</li>
-          <li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
-          <li class="icon brands fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
-          <li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li>
-          <li class="icon brands fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>
+          <li class="icon solid fa-phone">
+            <a href="" target="_blank">Thiago: (13) 98815-8703</a><br/>
+            <a href="" target="_blank">Ivan: (13) 99133-9014</a>
+          </li>
+          <li class="icon solid fa-envelope"><a href="#">comercial@htlbrasil.com</a></li>
+          <!-- <li class="icon brands fa-twitter"><a href="#">twitter.com/untitled-tld</a></li> -->
+          <!-- <li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li> -->
+          <!-- <li class="icon brands fa-instagram"><a href="#">instagram.com/untitled-tld</a></li> -->
         </ul>
         <ul class="copyright">
           <li>&copy; Untitled Inc. All rights reserved.</li>

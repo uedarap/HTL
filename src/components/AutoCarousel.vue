@@ -1,7 +1,7 @@
 <template>
   <div class="slider">
     <div class="slide-track">
-      <div class="slide" v-for="(image, index) in 18" :key="index">
+      <div class="slide" v-for="(image, index) in 16" :key="index">
         <img :src="`/src/assets/images/clients/${image}.png`" height="100" width="250" alt="" />
       </div>
     </div>
@@ -21,7 +21,7 @@ $animationSpeed: 100s;
     transform: translateX(100px);
   }
   50% {
-    transform: translateX(calc(-250px * 14))
+    transform: translateX(calc(-250px * 10))
   }
   100% {
     transform: translateX(100px);
@@ -29,11 +29,12 @@ $animationSpeed: 100s;
 }
 // Styling
 .slider {
-  background: rgba($color: rgb(50, 70, 126), $alpha: .3);
+  background: rgba($color: #ffffff, $alpha: 1);
   opacity: 0.8;
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
   height: 100px;
   margin: auto;
+  margin-top: 20px;
   overflow: hidden;
   position: relative;
   width: 100%;

@@ -63,6 +63,11 @@ body{
         background-image: linear-gradient(to top, rgba($primary, .7), rgba($primary, 0.2)), url('/src/assets/images/lamp_wide.png');
         background-repeat: round;
         transition: filter 0.3s ease-in-out;
+
+        @media (max-width: 968px) {
+            background-repeat: no-repeat;
+            background-position: 75% 0;
+        }
     }
 
     span{
@@ -90,6 +95,31 @@ body{
         opacity: 0.8;
     }
 
+    #banner{
+        height: 80vh;
+
+        .logo {
+            display: flex;
+            justify-content: start;
+
+            > img{
+                width: 30vw; 
+                margin: 50px 0;
+            }
+        }
+        
+
+        @media screen and (max-width: 968px) {
+            .logo {
+            justify-content: center;
+
+
+                >  img{
+                    width: 50vw;
+                }
+            }
+        }
+    }
 
     section#one{
         background-color: $primary;
