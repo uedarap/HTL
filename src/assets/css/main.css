@@ -2999,6 +2999,7 @@ input, select, textarea {
 		flex-wrap: wrap;
 		margin: 0 0 2em 0;
 		justify-content: space-between;
+		gap: 20px;
 	}
 
 		.features article {
@@ -3030,8 +3031,12 @@ input, select, textarea {
 
 		@media screen and (max-width: 980px) {
 
+			.features {
+				justify-content: center;
+			}
+
 			.features article {
-				margin: 1em 2em 1em 0;
+				/* margin: 1em 2em 1em 0; */
 				width: calc(50% - 1em);
 			}
 
@@ -3041,7 +3046,7 @@ input, select, textarea {
 
 			.features article {
 				padding: 1.5em 1.5em 0.1em 1.5em ;
-				margin: 0.875em 1.75em 0.875em 0;
+				/* margin: 0.875em 1.75em 0.875em 0; */
 				width: calc(50% - 0.875em - 1px);
 			}
 
@@ -3474,7 +3479,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 980px) {
+		@media screen and (max-width: 968px) {
 
 			#banner {
 				/* padding: 12em 3em 12.375em 3em ; */

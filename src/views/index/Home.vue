@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import axios from 'axios';
-import { ref } from 'vue';
+import { onMounted, ref } from 'vue';
 import Knob from '../../components/Knob.vue';
 import AutoCarousel from '../../components/AutoCarousel.vue';
 
@@ -8,6 +8,13 @@ const name = ref();
 const email = ref();
 const message = ref();
 const knobValue = ref(90);
+
+onMounted(() => {
+  // Configuração inicial do background
+  if(window.innerWidth < 969) {
+    document.getElementById('background').style.filter = `brightness(30%)`;
+  }
+});
 
 async function enviarFormulario() {
   try {
@@ -166,7 +173,7 @@ const knobValueChange = (value: number) => {
     <!-- Footer -->
     <section id="footer">
       <div class="inner">
-        <form @submit.prevent="enviarFormulario" style="z-index: 5;">
+        <!-- <form @submit.prevent="enviarFormulario" style="z-index: 5;">
           <div class="fields">
             <div class="field">
               <label for="name">Nome</label>
@@ -184,7 +191,10 @@ const knobValueChange = (value: number) => {
           <ul class="actions">
             <li><input type="submit" value="Enviar Mensagem" /></li>
           </ul>
-        </form>
+        </form> -->
+
+
+
         <ul class="contact">
           <li class="icon solid fa-home">
             <b>Rua Alexandre Gusmão 11</b><br />
