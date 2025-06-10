@@ -112,7 +112,7 @@ const knobValueChange = (value: number) => {
           <div class="content">
             <h2 class="major">Eagle Eye 3.0</h2>
             <p>O Eagle Eye é um sistema de iluminação pública inteligente com detecção por radar, que aciona luzes automaticamente ao detectar movimento e reduz a intensidade quando não há atividade, economizando energia. Ele usa comunicação por rádio para conectar controladores e garantir iluminação eficiente e segura para pedestres, ciclistas e veículos, contribuindo para a preservação ambiental.</p>
-            <a href="#" class="special">Saiba mais sobre esse produto</a>
+            <!-- <a href="#" class="special">Saiba mais sobre esse produto</a> -->
           </div>
         </div>
       </section>
@@ -124,7 +124,7 @@ const knobValueChange = (value: number) => {
           <div class="content">
             <h2 class="major">Eagle Eye Zhaga</h2>
             <p>O Eagle Eye Zhaga é um controlador de luz compatível com os padrões <b>Zhaga Book 18 e Dali-2</b>, capaz de detectar pedestres, ciclistas e veículos por meio de um sensor de movimento com radar Doppler. Ele ilumina o caminho à frente e pode atuar como controlador principal ou auxiliar em redes integradas. Seu compartimento ajustável permite adaptar a área de detecção para diferentes necessidades.</p>
-            <a href="#" class="special">Saiba mais sobre esse produto</a>
+            <a href="#" class="special">Saiba mais sobre esses produtos</a>
           </div>
         </div>
       </section>
@@ -193,27 +193,40 @@ const knobValueChange = (value: number) => {
           </ul>
         </form> -->
 
-
-
-        <ul class="contact">
-          <li class="icon solid fa-home">
-            <b>Rua Alexandre Gusmão 11</b><br />
-            Cj 917 e Sala 09<br />
-            Valongo, Santos SP - Brasil
+        <div style="flex: 1; z-index: 10;">
+          <div id="simple_logo">
+            <img src="../../assets/images/htl_simple.png" alt="">
+          </div>
+          <div id="social">
+            <a href="http://" target="_blank">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="http://" target="_blank">
+              <i class="fa fa-whatsapp" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <ul class="contact" style="flex: 1; padding-left: 25px;">
+          <li class="fa fa-home" aria-hidden="true">
+            <span>
+              <b>Rua Alexandre Gusmão 11</b><br />
+              Cj 917 e Sala 09<br />
+              Valongo, Santos SP - Brasil
+            </span>
           </li>
-          <li class="icon solid fa-phone">
+          <li class="fa fa-phone">
             <a href="" target="_blank">Thiago: (13) 98815-8703</a><br/>
             <a href="" target="_blank">Ivan: (13) 99133-9014</a>
           </li>
-          <li class="icon solid fa-envelope"><a href="#">comercial@htlbrasil.com</a></li>
+          <li class="fa fa-envelope"><a href="#">comercial@htlbrasil.com</a></li>
           <!-- <li class="icon brands fa-twitter"><a href="#">twitter.com/untitled-tld</a></li> -->
           <!-- <li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li> -->
           <!-- <li class="icon brands fa-instagram"><a href="#">instagram.com/untitled-tld</a></li> -->
         </ul>
-        <ul class="copyright">
+        <!-- <ul class="copyright">
           <li>&copy; Untitled Inc. All rights reserved.</li>
           <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-        </ul>
+        </ul> -->
       </div>
     </section>
 

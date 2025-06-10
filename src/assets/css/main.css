@@ -1,4 +1,4 @@
-@import url(fontawesome-all.min.css);
+@import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Raleway:200,700|Source+Sans+Pro:300,600,300italic,600italic");
 
 /*
@@ -2658,7 +2658,9 @@ input, select, textarea {
 
 	ul.contact {
 		list-style: none;
-		padding: 0;
+		display: flex;
+		flex-direction: column;
+		/* padding: 0; */
 	}
 
 		ul.contact li {
@@ -2677,14 +2679,14 @@ input, select, textarea {
 				text-rendering: auto;
 				line-height: 1;
 				text-transform: none !important;
-				font-family: 'Font Awesome 5 Free';
+				/* font-family: 'Font Awesome 5 Free'; */
 				font-weight: 400;
 			}
 
 			ul.contact li:before {
 				border-radius: 100%;
-				border: solid 2px rgba(255, 255, 255, 0.125);
-				display: inline-block;
+				/* border: solid 2px rgba(255, 255, 255, 0.125);
+				display: inline-block; */
 				font-size: 0.8em;
 				height: 2.5em;
 				left: 0;
@@ -4016,13 +4018,6 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		-moz-flex-direction: row;
-		-webkit-flex-direction: row;
-		-ms-flex-direction: row;
-		flex-direction: row;
-		-moz-flex-wrap: wrap;
-		-webkit-flex-wrap: wrap;
-		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 		margin: 0 auto;
 		width: 55em;
@@ -4094,7 +4089,8 @@ input, select, textarea {
 
 			#footer .inner {
 				padding: 3em 3em 1em 3em ;
-				display: block;
+				flex-direction: column-reverse;
+				/* display: block; */
 				width: 100%;
 			}
 

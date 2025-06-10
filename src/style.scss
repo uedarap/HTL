@@ -179,5 +179,38 @@ body{
         }
     }
 
+    #footer{
+
+        .inner{
+            .contact{
+                span, a{
+                    font-family: Raleway, Helvetica, sans-serif;
+                    border: none;
+                }
+            }
+        }
+
+        #simple_logo{
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            width: 100%;
+
+            img{
+                max-width: 200px;
+                width: 80%;
+            }
+        }
+
+        #social{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a{
+                border: none;
+            }
+        }
+    }
     
 }
