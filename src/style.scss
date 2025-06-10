@@ -1,5 +1,6 @@
 // Nova paleta de cores
 $primary: #4f67b1;
+$primary-2: #96ADD5;
 $primary-o: #4f67b1bb;
 $base: #6c757d;
 $secondary: #d9d9d9;
@@ -188,6 +189,26 @@ body{
                     border: none;
                 }
             }
+
+            li::before{
+                color: $secondary;
+                font-size: 1.2rem;
+                // margin-right: 10px;
+            }
+
+            i::before{
+                color: $primary-2;
+                font-size: 3rem;
+                margin: 20px;
+                transition: color 0.3s ease-in-out;
+            }
+
+            a:hover{
+                i::before{
+                    color: $secondary;
+
+                }
+            }
         }
 
         #simple_logo{
@@ -206,6 +227,8 @@ body{
             display: flex;
             justify-content: center;
             align-items: center;
+            gap: 20px;
+            margin-top: 20px;
 
             a{
                 border: none;

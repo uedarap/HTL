@@ -173,26 +173,6 @@ const knobValueChange = (value: number) => {
     <!-- Footer -->
     <section id="footer">
       <div class="inner">
-        <!-- <form @submit.prevent="enviarFormulario" style="z-index: 5;">
-          <div class="fields">
-            <div class="field">
-              <label for="name">Nome</label>
-              <input v-model="name" type="text" id="name" required />
-            </div>
-            <div class="field">
-              <label for="email">Email</label>
-              <input v-model="email" type="email" id="email" required />
-            </div>
-            <div class="field">
-              <label for="message">Mensagem</label>
-              <textarea v-model="message" id="message" rows="4" required></textarea>
-            </div>
-          </div>
-          <ul class="actions">
-            <li><input type="submit" value="Enviar Mensagem" /></li>
-          </ul>
-        </form> -->
-
         <div style="flex: 1; z-index: 10;">
           <div id="simple_logo">
             <img src="../../assets/images/htl_simple.png" alt="">
@@ -208,15 +188,15 @@ const knobValueChange = (value: number) => {
         </div>
         <ul class="contact" style="flex: 1; padding-left: 25px;">
           <li class="fa fa-home" aria-hidden="true">
-            <span>
+            <a target="_blank" href="https://maps.app.goo.gl/mwWzykkUpXKk9LZ58">
               <b>Rua Alexandre Gusmão 11</b><br />
               Cj 917 e Sala 09<br />
               Valongo, Santos SP - Brasil
-            </span>
+            </a>
           </li>
           <li class="fa fa-phone">
-            <a href="" target="_blank">Thiago: (13) 98815-8703</a><br/>
-            <a href="" target="_blank">Ivan: (13) 99133-9014</a>
+            <a href="" target="_blank"><b>Thiago:</b> (13) 98815-8703</a><br/>
+            <a href="" target="_blank"><b>Ivan</b> (13) 99133-9014</a>
           </li>
           <li class="fa fa-envelope"><a href="#">comercial@htlbrasil.com</a></li>
           <!-- <li class="icon brands fa-twitter"><a href="#">twitter.com/untitled-tld</a></li> -->
