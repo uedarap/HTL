@@ -3087,7 +3087,7 @@ input, select, textarea {
 		z-index: 10000;
 	}
 
-		#header h1 {
+		#header h1, #header img {
 			-moz-transition: opacity 0.2s ease-in-out, visibility 0.2s;
 			-webkit-transition: opacity 0.2s ease-in-out, visibility 0.2s;
 			-ms-transition: opacity 0.2s ease-in-out, visibility 0.2s;
@@ -3168,7 +3168,7 @@ input, select, textarea {
 			background-color: transparent;
 		}
 
-			#header.alt h1 {
+			#header.alt h1, #header.alt img {
 				opacity: 0;
 				visibility: hidden;
 			}

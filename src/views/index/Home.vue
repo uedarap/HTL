@@ -52,11 +52,15 @@ const knobValueChange = (value: number) => {
 
     <!-- Header -->
     <header id="header" class="alt">
-      <h1 class="q-pt-lg" style="font-size: 25pt; font-weight: 400; scroll-behavior: smooth;"><a href="#banner">HTL</a>
-      </h1>
+      <!-- <h1 class="q-pt-lg" style="font-size: 25pt; font-weight: 400; scroll-behavior: smooth;"><a href="#banner">HTL</a>
+      </h1> -->
+      <img src="../../assets/images/logo_less.png" style="width: 70px; scroll-behavior: smooth; padding-top: 20px;" alt="">
       <nav>
         <!-- <a href="#menu">Menu</a> -->
       </nav>
+      <a id="wpp" href="http://wa.me/+5513988504774" target="_blank">
+        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+      </a>
     </header>
 
     <!-- Menu -->
@@ -79,7 +83,7 @@ const knobValueChange = (value: number) => {
       <div class="inner">
         <div class="logo">
           <!-- <span class="icon fa-gem"></span> -->
-          <img src="../../assets/images/logo_azul.png" alt="">
+          <img src="../../assets/images/logo_d9.png" alt="">
         </div>
         <!-- <h2 style="font-weight: 100; font-size: 25pt; text-transform: uppercase;">Engenharia e Serviços</h2> -->
         <!-- <p>Another free + fully responsive site template by <a href="http://html5up.net">HTML5 UP</a></p> -->
@@ -175,13 +179,13 @@ const knobValueChange = (value: number) => {
       <div class="inner">
         <div style="flex: 1; z-index: 10;">
           <div id="simple_logo">
-            <img src="../../assets/images/htl_simple.png" alt="">
+            <img src="../../assets/images/logo_less.png" alt="">
           </div>
           <div id="social">
-            <a href="http://" target="_blank">
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            <a href="https://www.instagram.com/htl_empresa" target="_blank">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
             </a>
-            <a href="http://" target="_blank">
+            <a href="http://wa.me/+5513988504774" target="_blank">
               <i class="fa fa-whatsapp" aria-hidden="true"></i>
             </a>
           </div>
@@ -194,11 +198,11 @@ const knobValueChange = (value: number) => {
               Valongo, Santos SP - Brasil
             </a>
           </li>
-          <li class="fa fa-phone">
-            <a href="" target="_blank"><b>Thiago:</b> (13) 98815-8703</a><br/>
-            <a href="" target="_blank"><b>Ivan</b> (13) 99133-9014</a>
+          <li class="fa fa-phone" style="line-height: 1.2;">
+            <a href="" target="_blank" style="pointer-events: none;"><b>Thiago:</b> (13) 98815-8703</a><br/>
+            <a href="" target="_blank" style="pointer-events: none;"><b>Ivan:</b> (13) 99133-9014</a>
           </li>
-          <li class="fa fa-envelope"><a href="#">comercial@htlbrasil.com</a></li>
+          <li class="fa fa-envelope"><a href="mailto:comercial@htlbrasil.com">comercial@htlbrasil.com</a></li>
           <!-- <li class="icon brands fa-twitter"><a href="#">twitter.com/untitled-tld</a></li> -->
           <!-- <li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li> -->
           <!-- <li class="icon brands fa-instagram"><a href="#">instagram.com/untitled-tld</a></li> -->

@@ -88,6 +88,21 @@ body{
         background-color: $primary-s2;
     }
 
+    #wpp{
+        position: absolute;
+        right: 30px;
+        bottom: -90vh;
+        font-size: 3rem;
+        border: none;
+        background-color: $secondary;
+        padding: 5px 13px;
+        border-radius: 100%;
+        color: $primary;
+        aspect-ratio: 1;
+        align-content: center;
+        opacity: .8;
+    }
+
     #menu .inner{
         background: rgba($color: $primary, $alpha: .95);
     }
