@@ -97,7 +97,7 @@ const knobValueChange = (value: number) => {
       <!-- One -->
       <section id="one" class="wrapper spotlight style1 opacity">
         <div class="inner">
-          <a href="#" class="image"><img src="../../assets/images/brain.png" alt="" style="mix-blend-mode: color-dodge; opacity: .8;"/></a>
+          <a href="#" class="image" style="pointer-events: none;"><img src="../../assets/images/brain.png" alt="" style="mix-blend-mode: color-dodge; opacity: .8;"/></a>
           <div class="content">
             <h2 class="major">Iluminação inteligente</h2>
             <p>A iluminação das cidades mudou muito nos últimos anos, saindo de lâmpadas simples e gastonas para LEDs modernos e, agora, sistemas inteligentes. A ideia é usar sensores e redes sem fio para ajustar a luz automaticamente, de acordo com a necessidade do momento, como trânsito ou clima ruim. Isso não só economiza até 70% de energia, mas também deixa as ruas mais seguras e os espaços urbanos mais eficientes e sustentáveis. É uma forma prática de combinar tecnologia e sustentabilidade no dia a dia das cidades.</p>
@@ -112,7 +112,7 @@ const knobValueChange = (value: number) => {
           <h2 class="major">Nossas soluções</h2>
         </div>
         <div class="inner">
-          <a href="#" class="image"><img src="../../assets/images/eagle.png" alt="" /></a>
+          <a href="#" class="image" style="pointer-events: none;"><img src="../../assets/images/eagle.png" alt="" /></a>
           <div class="content">
             <h2 class="major">Eagle Eye 3.0</h2>
             <p>O Eagle Eye é um sistema de iluminação pública inteligente com detecção por radar, que aciona luzes automaticamente ao detectar movimento e reduz a intensidade quando não há atividade, economizando energia. Ele usa comunicação por rádio para conectar controladores e garantir iluminação eficiente e segura para pedestres, ciclistas e veículos, contribuindo para a preservação ambiental.</p>
@@ -124,7 +124,7 @@ const knobValueChange = (value: number) => {
       <!-- Three -->
       <section id="three" class="wrapper spotlight style3 opacity">
         <div class="inner">
-          <a href="#" class="image"><img src="../../assets/images/zhaga.png" alt="" /></a>
+          <a href="#" class="image" style="pointer-events: none;"><img src="../../assets/images/zhaga.png" alt="" /></a>
           <div class="content">
             <h2 class="major">Eagle Eye Zhaga</h2>
             <p>O Eagle Eye Zhaga é um controlador de luz compatível com os padrões <b>Zhaga Book 18 e Dali-2</b>, capaz de detectar pedestres, ciclistas e veículos por meio de um sensor de movimento com radar Doppler. Ele ilumina o caminho à frente e pode atuar como controlador principal ou auxiliar em redes integradas. Seu compartimento ajustável permite adaptar a área de detecção para diferentes necessidades.</p>
@@ -140,7 +140,7 @@ const knobValueChange = (value: number) => {
           <p>Desde 2011, a <b>HTL</b> atua em indústrias, rodovias e terminais portuários, oferecendo serviços de instalação, manutenção e adequação de sistemas elétricos, além de projetos e laudos técnicos. Também somos especialistas em soluções de iluminação inteligente, trazendo inovação e eficiência para nossos clientes. Nosso foco é combinar tecnologia de ponta com um atendimento próximo e confiável, garantindo excelência, transparência e resultados que atendem às reais necessidades de cada projeto.</p>
           <section class="features">
             <article>
-              <a href="#" class="image"><img src="../../assets/images/ilumincacao.png" alt="" style="pointer-events: none;"/></a>
+              <a href="#" class="image" style="pointer-events: none;"><img src="../../assets/images/ilumincacao.png" alt=""/></a>
               <h3 class="major">Iluminação</h3>
               <p>Soluções inteligentes e econômicas que garantem segurança e eficiência em diversos ambientes.</p>
               <!-- <a href="#" class="special">Learn more</a> -->
