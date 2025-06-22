@@ -128,7 +128,7 @@ const knobValueChange = (value: number) => {
           <div class="content">
             <h2 class="major">Eagle Eye Zhaga</h2>
             <p>O Eagle Eye Zhaga é um controlador de luz compatível com os padrões <b>Zhaga Book 18 e Dali-2</b>, capaz de detectar pedestres, ciclistas e veículos por meio de um sensor de movimento com radar Doppler. Ele ilumina o caminho à frente e pode atuar como controlador principal ou auxiliar em redes integradas. Seu compartimento ajustável permite adaptar a área de detecção para diferentes necessidades.</p>
-            <a href="#" class="special">Saiba mais sobre esses produtos</a>
+            <a href="https://raw.githubusercontent.com/uedarap/HTL/refs/heads/master/src/assets/dump/dados_tecnicos.pdf" class="special">Saiba mais sobre esses produtos</a>
           </div>
         </div>
       </section>
