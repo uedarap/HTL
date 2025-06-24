@@ -3,6 +3,7 @@ import axios from 'axios';
 import { onMounted, ref } from 'vue';
 import Knob from '../../components/Knob.vue';
 import AutoCarousel from '../../components/AutoCarousel.vue';
+import VideoFliper from '../../components/VideoFliper.vue';
 
 const name = ref();
 const email = ref();
@@ -112,7 +113,10 @@ const knobValueChange = (value: number) => {
           <h2 class="major">Nossas soluções</h2>
         </div>
         <div class="inner">
-          <a href="#" class="image" style="pointer-events: none;"><img src="../../assets/images/eagle.png" alt="" /></a>
+          <div style="margin-right: 40px;">
+            <VideoFliper imgSrc="/assets/images/eagle.png"></VideoFliper>
+          </div>
+          <!-- <a href="#" class="image" style="pointer-events: none;"><img src="../../assets/images/eagle.png" alt="" /></a> -->
           <div class="content">
             <h2 class="major">Eagle Eye 3.0</h2>
             <p>O Eagle Eye é um sistema de iluminação pública inteligente com detecção por radar, que aciona luzes automaticamente ao detectar movimento e reduz a intensidade quando não há atividade, economizando energia. Ele usa comunicação por rádio para conectar controladores e garantir iluminação eficiente e segura para pedestres, ciclistas e veículos, contribuindo para a preservação ambiental.</p>
