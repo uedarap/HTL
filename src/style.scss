@@ -170,6 +170,8 @@ body{
     section#three{
         background-color: $primary-s1;
         margin-top: 0;
+        z-index: 2;
+
         &:before{
             box-shadow: none;
             background-image: none;
